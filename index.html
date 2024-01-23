@@ -17,6 +17,16 @@
             color: bisque;
             text-align: center;
         }
+        button{
+            border-radius: 10px;
+            background-color: beige;
+            height: 40px;
+            width: 100px;
+        }
+        input{
+            border-radius: 10px;
+            background-color: rgba(240, 248, 255, 0.425);
+        }
     </style>
     <header>
         <h1>Este es el título de mi página</h1>
@@ -26,11 +36,14 @@
         <hr>
         <p>Lorem dolor ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum distinctio delectus eos explicabo! Nam alias rem asperiores, adipisci eveniet minus aut veniam eos suscipit animi. Nulla architecto veniam adipisci modi?
         </p>
+        <label for="nombre">Por favor digita tu nombre</label>
+        <input type="text" name="nombre" id="nombre"><br>
         <button onclick="saludo()">Saludar</button>
     </div>
     <script>
+        let nombre = document.getElementById("nombre")
         function saludo(){
-        alert("Hola mundo")
+        alert("Hola " + nombre)
         }
     </script>
 </body>
