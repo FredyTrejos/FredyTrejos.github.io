@@ -4,32 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi página web</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <style>
-        .container{
-            text-align: center;
-            background-color: rgba(93, 0, 255, 0.363);
-            width: auto;
-            height: auto;
-        }
-        h1{
-            color: bisque;
-            text-align: center;
-        }
-        button{
-            border-radius: 10px;
-            background-color: beige;
-            height: 40px;
-            width: 100px;
-        }
-        input{
-            border-radius: 10px;
-            background-color: rgba(240, 248, 255, 0.425);
-        }
+        
     </style>
     <header>
         <h1>Este es el título de mi página</h1>
+        <button onclick="window.location='perfil.html'">Perfil</button>
     </header>
     <div class="container">
         <h1>Mi página web</h1>
@@ -40,12 +23,6 @@
         <input type="text" name="nombre" id="nombre"><br>
         <button onclick="saludo()">Saludar</button>
     </div>
-    <script>
-        
-        function saludo(){
-            let nombre = document.getElementById("nombre").value;
-            alert("Hola " + nombre)
-        }
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
